@@ -24,7 +24,7 @@
     "drizzle-orm": "^0.44.1",
     "next": "15.3.3",
     "next-auth": "^5.0.0-beta.28",
-    "postgres": "^3.4.7",
+    "pg": "^8.16.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -32,6 +32,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pg": "^8.15.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.1",
