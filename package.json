@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:migrate": "drizzle-kit generate && drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
@@ -18,7 +20,11 @@
     "**/*.{css,md,json}": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.9.1",
+    "drizzle-orm": "^0.44.1",
     "next": "15.3.3",
+    "next-auth": "^5.0.0-beta.28",
+    "postgres": "^3.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -28,6 +34,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "eslint-config-prettier": "^10.1.5",
