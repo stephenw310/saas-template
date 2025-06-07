@@ -1,6 +1,6 @@
 # SaaS Template
 
-A modern, full-stack SaaS template built with **Next.js 15**, **Tailwind CSS**, **Drizzle ORM**, and **Auth.js**. This template provides a solid foundation for building SaaS applications with a flexible UI approach (no UI framework included), authentication, database management, and modern development tooling.
+A modern, full-stack SaaS template built with **Next.js 15**, **Tailwind CSS**, **Drizzle ORM**, and **Auth.js**. This template provides a solid foundation for building SaaS applications with authentication, database management, and modern development tooling. The UI is purposely left blank to allow you to build with your preferred library and components.
 
 ## 🚀 Features
 
@@ -155,11 +155,21 @@ Make sure to set all required environment variables in your production environme
 **Important**: Remember to update the authorized redirect URI in your Google Cloud Console to match your production domain:
 `https://your-domain.com/api/auth/callback/google`
 
-### One-click Deployment to Vercel
+### Vercel Deployment
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstephenw310%2Fsaas-template)
 
-### Manual Deployment
+### Docker Deployment
+
+1. [Install Docker](https://docs.docker.com/get-started/get-docker/) on your machine.
+
+2. Set `NEXTAUTH_URL` in your `.env` file to the URL of your Docker container. For example, if you are running the container on your local machine, you can set it to `http://localhost:3000`.
+
+3. Build your container: `docker build -t saas-template .`
+
+4. Run your container: `docker run -p 3000:3000 saas-template`
+
+### Node.js Server Deployment
 
 ```bash
 npm run build
@@ -168,9 +178,9 @@ npm run start
 
 ## 📝 TODO
 
+- [x] ~~Docker deployment configuration~~
 - [ ] Stripe payment integration
 - [ ] Email templates
-- [ ] Docker deployment configuration
 
 ## 🤝 Contributing
 
