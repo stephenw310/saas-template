@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SaaS Template",
-  description: "Starter template for SaaS apps",
+  title: "SaaS Starter Kit",
+  description: "Starter kit for SaaS apps",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
-# SaaS Template
+# SaaS Starter Kit
 
-A modern, full-stack SaaS template built with **Next.js 15**, **Tailwind CSS**, **Drizzle ORM**, and **Auth.js**. This template provides a solid foundation for building SaaS applications with authentication, database management, and modern development tooling. The UI is purposely left blank to allow you to build with your preferred library and components.
+A modern, full-stack SaaS starter kit built with **Next.js 15**, **Tailwind CSS**, **Drizzle ORM**, and **Auth.js**. This template provides a solid foundation for building SaaS applications with authentication, database management, and modern development tooling. The UI is purposely left blank to allow you to build with your preferred library and components.
 
 ## 🚀 Features
 
@@ -37,8 +37,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/stephenw310/saas-template.git
-cd saas-template
+git clone https://github.com/stephenw310/saas-starter-kit.git
+cd saas-starter-kit
 ```
 
 ### 2. Install Dependencies
@@ -157,7 +157,7 @@ Make sure to set all required environment variables in your production environme
 
 ### Vercel Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstephenw310%2Fsaas-template)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fstephenw310%2Fsaas-starter-kit)
 
 ### Docker Deployment
 
@@ -165,9 +165,9 @@ Make sure to set all required environment variables in your production environme
 
 2. Set `NEXTAUTH_URL` in your `.env` file to the URL of your Docker container. For example, if you are running the container on your local machine, you can set it to `http://localhost:3000`.
 
-3. Build your container: `docker build -t saas-template .`
+3. Build your container: `docker build -t saas-starter-kit .`
 
-4. Run your container: `docker run -p 3000:3000 saas-template`
+4. Run your container: `docker run -p 3000:3000 saas-starter-kit`
 
 ### Node.js Server Deployment
 
@@ -200,7 +200,7 @@ If you have any questions or need help getting started, you can:
 
 - Check the [Next.js documentation](https://nextjs.org/docs)
 - Review the [Auth.js documentation](https://authjs.dev/)
-- Open an [issue](https://github.com/stephenw310/saas-template/issues)
+- Open an [issue](https://github.com/stephenw310/saas-starter-kit/issues)
 
 ---
 

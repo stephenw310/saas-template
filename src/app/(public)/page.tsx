@@ -9,7 +9,7 @@ export default async function Home() {
       <Navbar />
       <main className="container mx-auto px-4">
         <h1 className="mx-auto py-10 text-center text-2xl font-bold">
-          SaaS Starter Template
+          SaaS Starter Kit
         </h1>
         {session?.user ? (
           <p className="text-center">Welcome {session.user.name}!</p>
