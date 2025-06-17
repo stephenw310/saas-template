@@ -1,27 +1,26 @@
-import { SignIn } from "@/components/auth/signin-button";
-import { SignOut } from "@/components/auth/signout-button";
 import { auth } from "@/lib/auth";
+import { Navbar } from "@/components/navbar";
 
 export default async function Home() {
   const session = await auth();
 
   return (
     <div>
-      <h1 className="mx-auto py-10 text-center text-2xl font-bold">
-        SaaS Template
-      </h1>
-      {session?.user ? (
-        <>
+      <Navbar />
+      <main className="container mx-auto px-4">
+        <h1 className="mx-auto py-10 text-center text-2xl font-bold">
+          SaaS Starter Template
+        </h1>
+        {session?.user ? (
           <p className="text-center">Welcome {session.user.name}!</p>
-          <div className="mt-4 flex justify-center">
-            <SignOut />
+        ) : (
+          <div className="text-center">
+            <p className="mb-6 text-gray-600 dark:text-gray-400">
+              Get started with your SaaS application
+            </p>
           </div>
-        </>
-      ) : (
-        <div className="flex justify-center">
-          <SignIn />
-        </div>
-      )}
+        )}
+      </main>
     </div>
   );
 }
